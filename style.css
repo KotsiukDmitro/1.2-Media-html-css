@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.container-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  }
+.container-item {
+  padding: 10px;
+  border: 1px solid silver;
+}
+.box-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: blue;
+  height: 150px;
+  min-height: 150px;
+}
+.box-2 {
+  background: orange;
+    }
+.box-4 {
+  background: green;
+}
+.box-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: yellow;
+  height: 150px;
+  min-height: 150px;
+  padding: 1px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
